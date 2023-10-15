@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      padding-right: 35px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    
+footer{
+    background-color: grey;
+    padding: 10px;
+    padding-bottom: 0;
+    flex-direction: column;
+    display: block;
+}
+
+#upper-footer {
+    flex-direction: row;
+    display: flex;
+    margin: 0;   
+    justify-content: space-between;
+}
+
+.first-col {
+    margin-left: 0;
+    padding: 10px;
+    width: 16%;
+    text-align: justify;
+}
+
+.second-col {
+    margin-left:  5%;
+    margin-top: 0;
+    width: 40%;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.third-col {
+    float: right;
+    padding: 10px;
+    margin-top: 0;
+    width: 20%;
+    position: relative;
+    text-align: justify;
+
+}
+
+footer .second-col {
+    top: 0;
+}
+.social-icons{
+    margin-left: 3%;
+    margin-top: 38px;
+    padding-top: 8px;
+  }
+
+
+  .social-icons a{
+    color: #888;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+    position: relative;
+  }
+
+  .power{
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+	  bottom: 0px;
+    position: relative;
+}
+.power p {
+    left: 13%;
+  }
+.copyright{
+    margin-top: 25px;
+    padding-bottom: 5px;
+}
+.copyright p{
+   margin-left: 15px;
+   color: aqua;
+}
+
+.copyright a{
+  color: chartreuse;
+}
+
+  </style>
+</head>
+<body>
+    <header style="background-color: rgb(139, 161, 151); height: 40px; margin: 0; padding: 15px;">
+        <!--Logo-->
+        <div class="logo" style="color: white; font-size: 28px;">
+            PlimsolTech
+        </div>
+    </header>
+
+  <h1>We expect your feedback</h1>
+  <p style="text-align: center;">Kindly leave us a message with your names and email and we will revert ASAP...</p>
+  <form method="POST" action="/contact">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Name or Alias....." required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Your working email here..." required><br><br>
+    <label for="message">Message:</label><br>
+    <textarea name="message" id="message" rows="5" placeholder="Talk to us.." required></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <p style="padding: 5px; color: cadetblue;">However as the case may be, you can send us a direct email to ouremail@example.com or call us on our hot lines 09097654544 | 098798798787. 
+    <br><br>All we care about is You!</p>
+
+  <br><br>
+  <a href="index.html" style="color: green; font-style: italic;">Back to the homepage</a>
+  
+  <footer>
+    <section id="upper-footer">
+        <div class="first-col">
+            <p><a href="#">Terms of Service</a></p><br>
+            <p><a href="#">Privacy</a></p>
+        </div>
+
+        <div class="second-col">
+            <div class="social-icons">
+            
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        </div>
+
+        <div class="third-col">
+            <p>Phone: +234 000 9999</p><br>
+            <p>E-MAIL: ourmail@example.com</p>
+        </div>
+
+    </section>
+    
+    <div class="copyright">
+        <p>copyright &copy;2023 <a href="#">PlimsolTech: All Rights Reserved</a></p>
+    </div>
+    <div class="power">
+        <p style="color: aliceblue;">Powered By PlimsolTech</p>
+    </div>
+
+
+</footer>
+
+
+</body>
+</html>
