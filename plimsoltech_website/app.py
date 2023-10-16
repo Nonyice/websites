@@ -3,7 +3,9 @@ from flask import Flask, render_template, request, redirect, url_for, jsonify
 import psycopg2
 import keyring
 
+
 app = Flask(__name__, static_url_path='/static')
+
 
 # Configure database connection details
 

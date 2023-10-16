@@ -1,7 +1,14 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-  <title>Contact Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>You are on the Contact page of PlimsolTech</title>
+  <link rel="stylesheet" href="https://cdn.cloudwares.com/css/webfonts.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -113,7 +120,7 @@ footer .second-col {
 
 
   .social-icons a{
-    color: #888;
+    color: #793737;
     margin: 0 15px;
     text-decoration: none;
     font-size: 24px;
@@ -144,6 +151,34 @@ footer .second-col {
   color: chartreuse;
 }
 
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  
+  .first-col {
+        width: auto;
+        margin-left: 3%;
+        text-align: center;
+    }
+
+    .second-col {
+        width: auto;
+        margin-left: 3%;
+    }
+
+    .third-col {
+        width: auto;
+        margin-left: 10%;
+        text-align: center;
+    }
+    #upper-footer {
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+    }
+}
+  
+}
+
   </style>
 </head>
 <body>
@@ -154,7 +189,7 @@ footer .second-col {
         </div>
     </header>
 
-  <h1>We expect your feedback</h1>
+  <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">We expect your feedback</h1>
   <p style="text-align: center;">Kindly leave us a message with your names and email and we will revert ASAP...</p>
   <form method="POST" action="/contact">
     <label for="name">Name:</label>
@@ -166,11 +201,11 @@ footer .second-col {
     <input type="submit" value="Submit">
   </form>
 
-  <p style="padding: 5px; color: cadetblue;">However as the case may be, you can send us a direct email to ouremail@example.com or call us on our hot lines 09097654544 | 098798798787. 
+  <p style="padding: 15px; color: cadetblue;">However as the case may be, you can send us a direct email to ouremail@example.com or call us on our hot lines 09097654544 | 098798798787. 
     <br><br>All we care about is You!</p>
 
   <br><br>
-  <a href="index.html" style="color: green; font-style: italic;">Back to the homepage</a>
+  <a href="/" style="color: green; font-style: italic;">Back to the homepage</a>
   
   <footer>
     <section id="upper-footer">

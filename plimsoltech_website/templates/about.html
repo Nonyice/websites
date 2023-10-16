@@ -23,6 +23,120 @@
         margin-left: 10%;
         width: 80%;
     }
+
+        
+footer{
+    background-color: grey;
+    padding: 10px;
+    padding-bottom: 0;
+    flex-direction: column;
+    display: block;
+}
+
+#upper-footer {
+    flex-direction: row;
+    display: flex;
+    margin: 0;   
+    justify-content: space-between;
+}
+
+.first-col {
+    margin-left: 0;
+    padding: 10px;
+    width: 16%;
+    text-align: justify;
+}
+
+.second-col {
+    margin-left:  5%;
+    margin-top: 0;
+    width: 40%;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.third-col {
+    float: right;
+    padding: 10px;
+    margin-top: 0;
+    width: 20%;
+    position: relative;
+    text-align: justify;
+
+}
+
+footer .second-col {
+    top: 0;
+}
+.social-icons{
+    margin-left: 3%;
+    margin-top: 38px;
+    padding-top: 8px;
+  }
+
+
+  .social-icons a{
+    color: #793737;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+    position: relative;
+  }
+
+  .power{
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+	  bottom: 0px;
+    position: relative;
+}
+.power p {
+    left: 13%;
+  }
+.copyright{
+    margin-top: 25px;
+    padding-bottom: 5px;
+}
+.copyright p{
+   margin-left: 15px;
+   color: aqua;
+}
+
+.copyright a{
+  color: chartreuse;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  
+  .first-col {
+        width: auto;
+        margin-left: 3%;
+        text-align: center;
+    }
+
+    .second-col {
+        width: auto;
+        margin-left: 3%;
+    }
+
+    .third-col {
+        width: auto;
+        margin-left: 10%;
+        text-align: center;
+    }
+    #upper-footer {
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+    }
+    
+}
+  
+
+
   </style>
 </head>
 <body>
@@ -75,7 +189,7 @@
             <div class="row">
             <div class="column2">
                 <div class="card">
-                <img src="images/FB_IMG_1659466568701.jpg" alt="leo" style="width: 100%">
+                <img src="/static/images/mee.jpg" alt="leo" style="width: 80%; text-align: center; margin-left: 50px">
                     <div class="container2">
                     <h2>leo lion</h2>
                         <p class="title">CEO</p>
@@ -102,16 +216,52 @@
                             ffffffceo</p>
                         <p>leo@example.com</p>
                         <p>
-                        <button class="button">Contact</button>
+                        <a href="/contact" style="text-decoration: none;">Contact</a>
                         </p>
                         </div>
                     </div>
+            </div>
+            </div>
         
         
-        <a href="index.html" style="color: green; font-style: italic; text-decoration: none;">Back to the homepage</a>
+        <a href="/" style="color: green; font-style: italic; text-decoration: none;">Back to the homepage</a>
         
         
     </section>
+    <footer>
+        <section id="upper-footer">
+            <div class="first-col">
+                <p><a href="#">Terms of Service</a></p><br>
+                <p><a href="#">Privacy</a></p>
+            </div>
+    
+            <div class="second-col">
+                <div class="social-icons">
+                
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            </div>
+    
+            <div class="third-col">
+                <p>Phone: +234 000 9999</p><br>
+                <p>E-MAIL: ourmail@example.com</p>
+            </div>
+    
+        </section>
+        
+        <div class="copyright">
+            <p>copyright &copy;2023 <a href="#">PlimsolTech: All Rights Reserved</a></p>
+        </div>
+        <div class="power">
+            <p style="color: aliceblue;">Powered By PlimsolTech</p>
+        </div>
+    
+    
+    </footer>
+    
 </body>
 </html>
 
